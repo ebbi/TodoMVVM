@@ -21,7 +21,7 @@ public class TodoRepository {
     // See the BasicSample in the android-architecture-components repository at
     // https://github.com/googlesamples
 
-    TodoRepository(Application application) {
+    public TodoRepository(Application application) {
         TodoRoomDatabase db = TodoRoomDatabase.getDatabase(application);
         mTodoDao = db.todoDao();
         mTodos = mTodoDao.getTodos();
@@ -30,7 +30,7 @@ public class TodoRepository {
     // Room executes all queries on a separate thread.
     // Observed LiveData will notify the observer when the data has changed.
 
-    LiveData<List<Todo>> getTodos()  {
+    public LiveData<List<Todo>> getTodos()  {
         return mTodos;
     }
 
