@@ -1,4 +1,4 @@
-package com.example.todomvvm.ui.main;
+package com.example.todomvvm.ui.todo;
 
 import android.app.Application;
 
@@ -11,7 +11,7 @@ import com.example.todomvvm.TodoRepository;
 
 import java.util.List;
 
-public class MainViewModel extends AndroidViewModel {
+public class TodoViewModel extends AndroidViewModel {
 
     private TodoRepository mRepository;
 
@@ -21,7 +21,7 @@ public class MainViewModel extends AndroidViewModel {
     // - Repository is completely separated from the UI through the ViewModel
     private LiveData<List<Todo>> mTodos;
 
-    public MainViewModel(@NonNull Application application) {
+    public TodoViewModel(@NonNull Application application) {
         super(application);
         mRepository = new TodoRepository(application);
         mTodos = mRepository.getTodos();

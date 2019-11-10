@@ -1,6 +1,5 @@
-package com.example.todomvvm.ui.main;
+package com.example.todomvvm.ui.todo;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,8 +27,8 @@ public class TodoListAdapter extends RecyclerView.Adapter<TodoListAdapter.TodoVi
     private final LayoutInflater mInflater;
     private List<Todo> mTodos; // Cached copy of todos
 
-    TodoListAdapter(Context context) {
-        mInflater = LayoutInflater.from(context);
+    TodoListAdapter(TodoFragment context) {
+        mInflater = LayoutInflater.from(context.getContext());
     }
 
     @NonNull
