@@ -1,4 +1,4 @@
-package com.example.todomvvm;
+package com.example.todomvvm.database;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
@@ -32,10 +32,10 @@ public class Todo {
         return this.mTitle;
     }
 
-    public String getDetail() {
+    String getDetail() {
         return this.mDetail;
     }
-    public void setDetail(String mDetail) {
+    void setDetail(String mDetail) {
         this.mDetail = mDetail;
     }
 

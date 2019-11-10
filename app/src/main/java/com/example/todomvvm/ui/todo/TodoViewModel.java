@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.todomvvm.Todo;
-import com.example.todomvvm.TodoRepository;
+import com.example.todomvvm.database.Todo;
+import com.example.todomvvm.database.TodoRepository;
 
 import java.util.List;
 

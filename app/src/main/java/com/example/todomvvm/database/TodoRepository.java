@@ -1,8 +1,12 @@
-package com.example.todomvvm;
+package com.example.todomvvm.database;
 
 import android.app.Application;
 import androidx.lifecycle.LiveData;
 import android.os.AsyncTask;
+
+import com.example.todomvvm.database.Todo;
+import com.example.todomvvm.database.TodoDao;
+import com.example.todomvvm.database.TodoRoomDatabase;
 
 import java.util.List;
 

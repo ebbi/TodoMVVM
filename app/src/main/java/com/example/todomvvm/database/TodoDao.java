@@ -1,10 +1,12 @@
-package com.example.todomvvm;
+package com.example.todomvvm.database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
+
+import com.example.todomvvm.database.Todo;
 
 import java.util.List;
 
@@ -23,6 +25,7 @@ public interface TodoDao {
     @Query("SELECT * FROM todo_table")
     LiveData<List<Todo>> getTodos();
 
+    // conflict resolution strategy - IGNORE allows insert of same Todo multiple times
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insert(Todo todo);
 

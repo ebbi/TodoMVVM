@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.todomvvm.R;
-import com.example.todomvvm.Todo;
+import com.example.todomvvm.database.Todo;
 
 import java.util.List;
 
